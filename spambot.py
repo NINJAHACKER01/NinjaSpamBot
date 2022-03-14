@@ -43,7 +43,7 @@ from Config import (
 )
 from Utils import RAID, RRAID
 
-grp = os.environ.get("GROUP_USERNAME", None) or "LB_OFFTOPIC"
+grp = os.environ.get("GROUP_USERNAME", None) or "NinjaSpamBot"
 if "@" in grp:
     grp = grp.replace("@", "")
 a = API_ID
@@ -1317,7 +1317,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
-        await event.edit(f"⚡[ᴘᴏɴɢ] ⚡!\n`{ms}` 𝗺𝘀")
+        await event.edit(f"⚡[NιɳʝαʂραɱႦσƚ]⚡!\n`{ms}` 𝗺𝘀")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -1425,11 +1425,11 @@ async def help(e):
 
 
 text = """
-CONGRATS🥳🥳🥳 YOUR FASTEST, SMOOTHEST AND POWERFUL LEGENDSPAMBOT DEPLOYED SUCCESSFULLY """
+CONGRATS🥳🥳🥳 YOUR FASTEST, SMOOTHEST AND POWERFUL NιɳʝαʂραɱႦσƚ DEPLOYED SUCCESSFULLY """
 
 print(text)
 print("")
-print("🙏🔥🔥YOUR! LEGEND SPAM BOT STARTED SUCCESFULLY.🔥🔥🙏")
+print("🙏🔥🔥YOUR! Nιɳʝα SPAM BOT STARTED SUCCESFULLY.🔥🔥🙏")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
